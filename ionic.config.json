@@ -1,0 +1,7 @@
+{
+  "name": "modal-animations",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
