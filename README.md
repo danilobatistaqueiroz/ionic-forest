@@ -1,3 +1,11 @@
+Dimensoes ideais para o teste: Pixel 3 - 393 x 786  
+Esse projeto não está responsivo, o botão Plantar, a árvore central, e os botões no topo são uma imagem fixa.  
+
+Seria necessário recortar a árvore, o ideal ela ser uma imagem vetorial, e centralizá-la na tela, especificando um tamanho em percentual com max e min width e height  
+Usar um position:fixed para o botão Plantar com um bottom talvez de uns 100px e centralizado horizontalmente.  
+Os botões no topo dentro de uma div position:fixed com 100% de width usando flexbox com flex-direction:row e justify-content:space-between  e top de uns 100px
+
+
 #### Para personalizar o ion-modal:  
 
 as chamadas das modais estão no arquivo settings.component.ts

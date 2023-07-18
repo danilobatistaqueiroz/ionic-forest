@@ -1,6 +1,7 @@
+//É possível usar AnimationController, um exemplo está no arquivo animations.ts
+
 // @ts-ignore
 import { c as createAnimation } from 'node_modules/@ionic/core/components/animation.js';
-//import {} from '@ionic/core/components/ion-modal.js';
 
 // @ts-ignore
 import {g as getElementRoot} from 'node_modules/@ionic/core/components/helpers.js';
@@ -30,3 +31,7 @@ const createEnterAnimation = () => {
   ]);
   return { backdropAnimation, wrapperAnimation };
 };
+
+export const mdLeaveAnimation = (baseEl:any, opts:any) => {
+  return mdEnterAnimation(baseEl,opts).direction('reverse');
+}

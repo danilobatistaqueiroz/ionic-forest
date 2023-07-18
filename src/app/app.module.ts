@@ -10,7 +10,6 @@ import { SlidesComponent } from './tutorial/slides/slides.component';
 
 import { PreferencesService } from './services/preferences.service';
 import { SettingsComponent } from './tutorial/settings/settings.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TermsComponent } from './tutorial/terms/terms.component';
 
 export function initializeFactory(init: PreferencesService) {
@@ -19,7 +18,7 @@ export function initializeFactory(init: PreferencesService) {
 
 @NgModule({
   declarations: [AppComponent,SlidesComponent,SettingsComponent,TermsComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgbModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     PreferencesService,
     { provide: APP_INITIALIZER,

@@ -1,23 +1,29 @@
-<div class="logo-modal">
-  <img src="assets/tutorial/phone-analisis.png" class="image-logo-modal"/>
-</div>
-<div class="modal-header">
-  <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-  <button type="button" class="btn-close" aria-label="Close" (click)="cancel()"></button>
-</div>
-<div class="modal-body">
-  <form>
-    <div class="mb-3">
-      <label for="dateOfBirth">Date of birth</label>
-      <div class="input-group">
-        <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker
-          #dp="ngbDatepicker" />
-        <button class="btn btn-outline-secondary bi bi-calendar3" (click)="dp.toggle()" type="button"></button>
+<div class="main">
+  <div class="logo-modal">
+    <img src="assets/tutorial/phone-analisis.png" class="image-logo-modal"/>
+  </div>
+  <div class="title">
+    Compartilhamento de relatórios de travamento, uso de dados e informações adicionais
+  </div>
+  <div class="modal-body">
+      <div>
+        1. Coletaríamos dados, incluindo o modelo do dispositivo e os estados internos, no momento em que ocorrecessem erros para solucionar problemas para você.
       </div>
-    </div>
-  </form>
-</div>
-<div class="modal-footer">
-  <button type="button" class="btn disagree" (click)="cancel()">Discordo</button>
-  <button type="button" class="btn agree" (click)="confirm()">Concordo</button>
+      <div>
+        2. Coletaríamos seus dados de uso do Forest para continuar melhorando sua experiência no Forest.
+      </div>
+      <div>
+        3. Coletaríamos alguns dados pessoais, tais como teu nome, localização, dispositivo para análise.
+      </div>
+      <div>
+        4. Coletaríamos alguns dados pessoais, tais como teu nome, localização, dispositivo para análise.
+      </div>
+      <div>
+        5. Coletaríamos alguns dados pessoais, tais como teu nome, localização, dispositivo para análise.
+      </div>
+  </div>
+  <div class="modal-footer" style="background-color:#fff;z-index:10">
+    <button type="button" class="btn disagree" (click)="cancel()">Discordo</button>
+    <button type="button" class="btn agree" (click)="confirm()">Concordo</button>
+  </div>
 </div>
