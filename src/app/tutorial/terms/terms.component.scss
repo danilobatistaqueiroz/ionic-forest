@@ -1,0 +1,41 @@
+
+.disagree {
+  background-color: #F16662;
+  color:white;
+  font-weight: bolder;
+  box-shadow:0px 3px #D73322;
+  padding: 7px 21px;
+  width:120px;
+}
+.agree {
+  background-color: #8AC922;
+  color:white;
+  font-weight: bolder;
+  box-shadow:0px 3px #64A506;
+  padding: 7px 21px;
+  width:120px;
+  margin-left:10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:40px;
+}
+.modal-body {
+  padding:10px;
+}
+.modal-header {
+  padding:10px;
+}
+
+.image-logo-modal {
+  width: 100px;
+}
+.logo-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:30px;
+}
