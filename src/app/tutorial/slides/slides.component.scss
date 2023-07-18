@@ -1,0 +1,14 @@
+@media only screen and (min-width: 600px) {
+  swiper-slide div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.floating {
+  position:fixed;
+  left:50%;
+  top:20%;
+  transform:translateX(-50%)
+}

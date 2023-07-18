@@ -1,0 +1,35 @@
+<ion-content fullscreen scroll-y="true" style="height:100%">
+  <div class="main" style="height:100%">
+    <img style="height:100%" src="assets/tutorial/settings5.png" />
+    <div class="floating floating1" (click)="hideAnimation1()">Toque aqui para alternar entre os modos Temporizador e Cronômetro.</div>
+    <div class="floating floating2" (click)="hideAnimation2()">No modo Temporizador, arraste o botão verde para ajustar o tempo</div>
+    <div class="floating floating3" (click)="hideAnimation3()">Toque na árvore para selecionar outra espécie</div>
+  </div>
+</ion-content>
+
+
+<ng-template #modalcompartilhamento let-modal>
+  <div class="logo-modal">
+    <img src="assets/tutorial/phone-analisis.png" class="image-logo-modal"/>
+  </div>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+          <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker
+            #dp="ngbDatepicker" />
+          <button class="btn btn-outline-secondary bi bi-calendar3" (click)="dp.toggle()" type="button"></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn disagree" (click)="modal.close('Save click')">Discordo</button>
+    <button type="button" class="btn agree" (click)="modal.close('Save click')">Concordo</button>
+  </div>
+</ng-template>

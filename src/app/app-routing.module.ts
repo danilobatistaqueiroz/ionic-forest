@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { SlidesComponent } from './tutorial/slides/slides.component';
+import { SettingsComponent } from './tutorial/settings/settings.component';
 
 const routes: Routes = [
   {
@@ -7,8 +9,16 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'tutorial/slides',
+    component: SlidesComponent
+  },
+  {
+    path: 'tutorial/settings',
+    component: SettingsComponent
+  },
+  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tutorial/slides',
     pathMatch: 'full'
   },
 ];
